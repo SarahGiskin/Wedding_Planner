@@ -1,0 +1,144 @@
+ <!-- this is a program to make an interactive web page for a wedding planner --> 
+ <!-- last edited by Sarah Giskin 8/26/21 --> 
+
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+   <meta charset="utf-8" />
+   <title>Wedding Plan</title>
+ 
+   <link href = "stylesheet.css" rel = "stylesheet" type = "text/css"> 
+ 
+   <script src = "jquery-3.6.0.js" type = "application/javascript"></script>
+   <script src = "wed_plan.js" type = "application/javascript"></script>
+ 
+ </head>
+ 
+ <body>
+   <h1 id = "heading">Plan your wedding with us!</h1>
+
+  <div id = "form_div">
+     <h2>Take this quiz to be matched with one of our premiere wedding packages!</h2>
+
+     <form id = "myForm" class = "form">
+
+        <div id = "ask_name">
+            <label for = "user_name">Your first name: </label>
+            <input type = "text" name = "userName" id = "user_name" placeholder = "Eve" />
+        </div>
+
+        <div id = "ask_name2">
+            <label for = "other_name">Your soon to be spouse's first name: </label>
+            <input type = "text" name = "otherName" id = "other_name" placeholder = "Adam" />
+        </div>
+
+        <div id = "ask_date">
+            <label for = "wed_date">Your wedding date: </label>
+            <input type = "date" name = "wedDate" id = "wed_date" 
+            min="2021-12-01" max="2023-12-31"/>
+        </div>
+
+
+        <div id = "ask_vibe">
+            <label for = "vibe">Wedding vibe: </label>
+            <select name = "vibe" id = "vibe"> 
+                <option value = "" disabled selected = "selected">--Choose--</option>
+                <option value = "zero" class = "zero">kinda casual</option>
+                <option value = "one" class = "one">sweet and romantic</option>
+                <option value = "two" class = "two">super formal</option>
+            </select>
+        </div>
+
+        <div id = "ask_ven">
+            <label>Venue type:</label><br>
+            
+            <input type = "radio" name = "venue" id = "indoor" class = "two" value = "two"/>
+            <label for = "indoor">Indoor</label> <br>
+            
+            <input type = "radio" name = "venue" id = "outdoor" class = "zero" value = "zero"/>
+            <label for = "outdoor">Outdoor</label> <br>
+            
+        </div>
+        
+        <div id = "ask_color">
+            <label for = "color_scheme">Color scheme: </label>
+            <select name = "colorScheme" id = "color_scheme"> 
+                <option value = "" disabled selected = "selected">--Choose--</option>
+                <option value = "zero" class = "zero">Pastels</option>
+                <option value = "one" class = "one">Jewel tones</option>
+                <option value = "two" class = "two">Black & white</option>
+            </select>
+        </div>
+
+        <div id = "ask_cost">
+            <label for = "cost">Cost per guest ($35 - $115): </label>
+            <input type = "number" name = "cost" id = "cost" placeholder = "75"/>
+        </div>
+
+        <div id = "ask_meal">
+            <label>Meal type:</label><br>
+            
+            <input type = "radio" name = "meal" id = "buffet" class = "zero" value = "zero"/>
+            <label for = "buffet">Buffet</label> <br>
+            
+            <input type = "radio" name = "meal" id = "dinner" class = "two" value = "two"/>
+            <label for = "dinner">Dinner service</label> <br>
+        </div>
+
+
+        <div id = "submit">
+            <input type = "submit" value = "Submit"/>
+        </div>
+
+    </form> <!--end form--> 
+    </div> <!--end form div--> 
+  
+    <div id = "result_box"> </div> <!--end result_box--> 
+
+    <div id = "form_div2"> 
+        
+        <h2>We can also help you get a great deal on a honeymoon trip!</h2>
+
+        <p>Please enter your top 3 honeymoon destinations, and we will let you know if we can hook you up.</p>
+        
+        <form id = "newForm" class = "form">
+            <div id = "hmoon_div">
+                <label for = "h_moon1">Desitination 1: </label>
+                <input type = "text" name = "hMoon1" id = "h_moon1" placeholder = "Eden"/> <br>
+            
+                <label for = "h_moon2">Desitination 2: </label>
+                <input type = "text" name = "hMoon2" id = "h_moon2" placeholder = "Eden"/> <br>
+
+                <label for = "h_moon3">Desitination 3: </label>
+                <input type = "text" name = "hMoon3" id = "h_moon3" placeholder = "Eden"/> <br>   
+            
+            </div> <!-- end honeymoon div--> 
+
+            <div id = "submit2">
+                <input type = "submit" value = "Submit"/>
+            </div>
+            
+        </form> <!--end second form--> 
+
+    </div> <!--end second form div--> 
+
+    <div id = "result_box2"> </div> <!--end result_box2--> 
+
+    <div id = "img_div">
+        <h2>Have you thought about your wedding cake style?</h2>
+
+        <p>Click the button to reveal one cake option. If you aren't satisfied, 
+        click the cake and it will change!</p>
+
+        <button id = "cake_button">See cake!</button>
+
+        <img src = "cake_1.jpg" id = "cakePic" class = "hidden" 
+        alt = "image of a wedding cake with gold and real flowers">
+
+    </div> <!--end img div--> 
+ 
+ </body>
+ 
+ </html>
+ 

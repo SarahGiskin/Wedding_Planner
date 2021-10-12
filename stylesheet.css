@@ -1,0 +1,13 @@
+h1 {color: white; font-family: 'Edwardian Script ITC', 'Freestyle Script', 'Brush Script', serif; font-size: 58px;}
+
+h2 {color:white; font-family: 'Calisto MT', 'California FB', 'Centaur', sans serif; font-size: 28px;}
+
+p {color: darkslategrey; font-family: 'Calisto MT', 'California FB', 'Centaur', sans-serif; font-size: 20px;}
+
+body {background-color: lightpink;color: darkslategrey; font-family: 'Centaur', sans-serif; font-size: 18px;}
+
+#myList {color: white; font-family: 'Calisto MT', 'California FB', 'Centaur', sans-serif; font-size: 14px;}
+
+.form {color: darkslategrey; font-family: 'Calisto MT', 'California FB', 'Centaur', sans-serif; font-size: 16px;}
+
+.hidden {display: none;}

@@ -1,0 +1,32 @@
+{
+    "first": {
+        "package": "SILVER",
+        "vibe": "casual",
+        "venue": "outdoor",
+        "color": "pastels",
+        "cost": 50,
+        "meal": "buffet"
+
+    }, 
+
+    "second": {
+        "package": "GOLD",
+        "vibe": "romantic",
+        "venue": "indoor",
+        "color": "jewel tones",
+        "cost": 75,
+        "meal": "buffet"
+
+    }, 
+
+    "third": {
+        "package": "DIAMOND",
+        "vibe": "formal",
+        "venue": "indoor",
+        "color": "black and white",
+        "cost": 100,
+        "meal": "plated dinner"
+
+    }
+
+}
